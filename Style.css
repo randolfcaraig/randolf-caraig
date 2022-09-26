@@ -1,0 +1,128 @@
+body {
+    background-image: url(Images/bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  
+h1 {
+    text-align: center;
+    font-family: "Papyrus", fantasy;
+    font-size: 50px;
+    color: white;
+    margin-bottom: 0%;
+  }
+
+.Index_p {
+    text-align: center;
+    font-family: "Papyrus", fantasy;
+    font-size: 25px;
+    color: white;
+    margin-top: 0%;
+  }
+
+.Index_Button{
+    border-radius: 65px;
+    background-color: transparent;
+    border-color: transparent;
+    text-align: center;
+    margin-left: 115px;
+}
+
+.image {
+    position: relative;
+    width: 400px;
+    background-color: transparent;
+}
+
+.image__img {
+    display: block;
+    width: 100%;
+}
+
+.image__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    font-family:  "Papyrus", fantasy;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.image__overlay--blur {
+    backdrop-filter: blur(5px);
+}
+
+.image__overlay > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.image__overlay:hover {
+    opacity: 1;
+}
+
+.image__overlay:hover > * {
+    transform: translateY(0);
+}
+
+.image__title {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.image__description {
+    font-size: 1.25em;
+    margin-top: 0.25em;
+}
+
+.AM_Image {
+        float: left;
+        width: 30%;
+        margin-top: 2%;
+        margin-left: 2%;
+        margin-right: 5%;
+}
+
+.AM_Info {
+    font-family: "Papyrus", fantasy;
+    font-size: 50px;
+    color: white;
+    margin-top: 8%;
+}
+
+.AM_Info_Mini{
+    font-family: "Papyrus", fantasy;
+    font-size: 20px;
+    color: white;
+    margin-top: 8%;
+}
+
+.L_Info {
+    font-family: "Papyrus", fantasy;
+    font-size: 20px;
+    color: white;
+    margin-top: 8%;
+}
+
+.Back_Button {
+    border: 2px solid #f1f1f1;
+    color: #f1f1f1;
+    background: none;
+    padding: 10px 10px;
+    font-size: 20px;
+    float: left;
+}
+
+.H_Vid{
+    float: left;
+    height: 500px;
+}
